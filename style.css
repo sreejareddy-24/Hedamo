@@ -1,0 +1,125 @@
+/* Global font */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7e6, #e6f0ff, #fce6f7);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7e6, #e6f0ff, #fce6f7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Brand Title */
+.brand-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #009b4d;
+  letter-spacing: 2px;
+}
+
+/* Divider */
+.divider {
+  width: 60%;
+  border-top: 3px solid #00c16a;
+  margin: 1rem auto;
+}
+
+/* Description */
+.description {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Floating Labels */
+.floating-label {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.15;
+  animation: float 6s ease-in-out infinite;
+  color: #009b4d;
+}
+
+.skincare { top: 20%; left: 10%; }
+.food { bottom: 15%; right: 12%; }
+.cosmetics { top: 40%; right: 10%; }
+.haircare{ top: 50%; left: 20%; }
+.essential{ bottom: 15%; left: 12%; }
+.wellness{ top: 10%; right: 25%; }
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+/* -------------------- Product Cards -------------------- */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #009b4d;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: #00c16a;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #009b4d;
+}
